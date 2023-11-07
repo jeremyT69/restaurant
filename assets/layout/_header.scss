@@ -1,0 +1,32 @@
+header {
+    min-height: 100vh;
+    background: url(../img/bg-slider-06.jpg) fixed center/cover;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        color: $white;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1 {
+        text-align: center;
+        color: $orange;
+        font-size: 2.4rem;
+        font-family: $font1;
+
+    }
+
+    h1 span {
+        color: $white;
+        font-family: $font3;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+    }
+
+}

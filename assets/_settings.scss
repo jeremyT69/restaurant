@@ -13,9 +13,12 @@
     src: url(./fonts/Roboto-Light.ttf);
 }
 
-$font1: Allura, sans-serif;
+$font1: Allura,;
 $font2: Poppins, sans-serif;
 $font3: Roboto, sans-serif;
+$white: rgb(248, 248, 248);
+$black: rgb(17, 17, 17);
+$orange: rgba(189, 129, 39, 0.9);
 
 * {
     margin: 0;
