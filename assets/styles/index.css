@@ -24,25 +24,45 @@ header {
   min-height: 100vh;
   background: url(../img/bg-slider-06.jpg) fixed center/cover;
 }
-header .navbar {
+header .header-menu {
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
-  color: rgb(248, 248, 248);
+  color: #eee;
 }
-header .navbar ul {
+header .header-menu .logo {
+  display: flex;
+  font-family: Allura, cursive;
+  font-size: 1.8rem;
+}
+header .header-menu nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-menu nav .nav-left {
+  display: flex;
+  font-family: Poppins, serif;
+  text-transform: uppercase;
+}
+header .header-menu nav .nav-left li {
+  padding-right: 20px;
+}
+header .header-menu nav .nav-right {
   display: flex;
   justify-content: space-around;
+}
+header .header-menu nav .nav-right li {
+  padding-right: 15px;
 }
 header h1 {
   text-align: center;
   color: rgba(189, 129, 39, 0.9);
   font-size: 2.4rem;
-  font-family: Allura;
+  font-family: Allura, cursive;
 }
 header h1 span {
-  color: rgb(248, 248, 248);
-  font-family: Roboto, sans-serif;
+  color: #eee;
+  font-family: Roboto, serif;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 15px;

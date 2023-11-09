@@ -1,17 +1,6 @@
 header {
     min-height: 100vh;
-    background: url(../img/bg-slider-06.jpg) fixed center/cover;
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        font-size: 0.8rem;
-        color: $white;
-    }
-    .navbar ul {
-        display: flex;
-        justify-content: space-around;
-    }
+    background: url(../img/bg-slider-06.jpg) fixed center/cover;  
 
     h1 {
         text-align: center;
