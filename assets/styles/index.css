@@ -20,50 +20,58 @@ li {
   list-style: none;
 }
 
+body {
+  text-align: center;
+  font-family: Roboto, serif;
+  background: #21201e;
+}
+
 header {
   min-height: 100vh;
   background: url(../img/bg-slider-06.jpg) fixed center/cover;
-}
-header .header-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #eee;
 }
-header .header-menu .logo {
-  display: flex;
-  font-family: Allura, cursive;
-  font-size: 1.8rem;
-}
-header .header-menu nav {
-  display: flex;
-  justify-content: space-between;
-}
-header .header-menu nav .nav-left {
-  display: flex;
-  font-family: Poppins, serif;
-  text-transform: uppercase;
-}
-header .header-menu nav .nav-left li {
-  padding-right: 20px;
-}
-header .header-menu nav .nav-right {
+header nav {
   display: flex;
   justify-content: space-around;
+  margin: 30px 0 60px;
 }
-header .header-menu nav .nav-right li {
-  padding-right: 15px;
+header nav .logo {
+  font-family: Poppins, serif;
+  font-size: 1.8rem;
 }
-header h1 {
-  text-align: center;
-  color: rgba(189, 129, 39, 0.9);
-  font-size: 2.4rem;
+header nav .nav-elements {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
   font-family: Allura, cursive;
 }
-header h1 span {
-  color: #eee;
-  font-family: Roboto, serif;
+header nav .nav-elements li {
+  padding-right: 50px;
+  cursor: pointer;
+}
+header nav .nav-elements li:hover {
+  color: rgb(166, 114, 69);
+  scale: 1.1;
+}
+header nav .nav-icons {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-icons li {
+  padding-right: 20px;
+}
+header .header-content {
+  padding-top: 50px;
+}
+header .header-content h2 {
+  font-family: Poppins, serif;
+  font-size: 2.8rem;
+  color: rgb(166, 114, 69);
+}
+header .header-content h1 {
+  font-family: Allura, cursive;
   font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 15px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=index.css.map */
