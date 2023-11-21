@@ -3,11 +3,75 @@
     padding-bottom: 100px;
     position: relative;
 
-    &:hover {
+    &:after {
         content: "";
         position: absolute;
         height: 620px;
         width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background: url(../img/bg-menu-01.jpg) center/cover;
+    }
+
+    h2 {
+        color: $color1;
+        font-family: $font1;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 60px 0 30px;
+    }
+
+    ul {
+        @include alignChildren(space-around);
+        width: 50%;
+        margin: 30px auto;
+        // min-width sert a eviter que les élémnets de la nav se reserre sur un écran plus petit. 
+        min-width: 500px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: 0.2s;
+
+        li {
+            border-bottom: 1px solid $grey;
+            padding-bottom: 8px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .carte-menu {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        background: $white;
+        color: $black;
+        width: 60%;
+        margin: 0 auto 50px;
+        border-top: 3px solid $color1;
+        height: 600px;
+
+        .menu {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            align-items: center;
+
+            img {
+                border-radius: 150px;
+                padding-left: 15px;
+            }
+
+            p:nth-child(3) {
+                color: $color1;
+            }
+        }
+
+        .menu-text {
+            text-align: justify;
+            padding-left: 30px;
+        }
     }
 }

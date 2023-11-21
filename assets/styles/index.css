@@ -152,10 +152,66 @@ header .header-content div h6 {
   padding-bottom: 100px;
   position: relative;
 }
-.section2:hover {
+.section2:after {
   content: "";
   position: absolute;
   height: 620px;
   width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: url(../img/bg-menu-01.jpg) center/cover;
+}
+.section2 h2 {
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 60px 0 30px;
+}
+.section2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 30px auto;
+  min-width: 500px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.section2 ul li {
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding-bottom: 8px;
+}
+.section2 ul li:hover {
+  transform: scale(1.1);
+}
+.section2 .carte-menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background: #eee;
+  color: #21201e;
+  width: 60%;
+  margin: 0 auto 50px;
+  border-top: 3px solid rgb(166, 114, 69);
+  height: 600px;
+}
+.section2 .carte-menu .menu {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+}
+.section2 .carte-menu .menu img {
+  border-radius: 150px;
+  padding-left: 15px;
+}
+.section2 .carte-menu .menu p:nth-child(3) {
+  color: rgb(166, 114, 69);
+}
+.section2 .carte-menu .menu-text {
+  text-align: justify;
+  padding-left: 30px;
 }/*# sourceMappingURL=index.css.map */
