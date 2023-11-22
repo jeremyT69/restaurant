@@ -189,29 +189,49 @@ header .header-content div h6 {
 .section2 .carte-menu {
   display: grid;
   grid-template-columns: 50% 50%;
-  align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 100;
   background: #eee;
   color: #21201e;
-  width: 60%;
-  margin: 0 auto 50px;
-  border-top: 3px solid rgb(166, 114, 69);
-  height: 600px;
+  width: 85%;
+  margin: 0 auto;
+  max-width: 800px;
+  border-top: 4px solid rgb(166, 114, 69);
+  padding: 15px 0;
 }
 .section2 .carte-menu .menu {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  align-items: center;
+  grid-template-columns: 25% 60% 15%;
+  border-bottom: 1px dashed rgb(182, 182, 182);
+  padding: 30px 0;
+  margin: 0 20px;
 }
 .section2 .carte-menu .menu img {
-  border-radius: 150px;
-  padding-left: 15px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  align-self: center;
 }
-.section2 .carte-menu .menu p:nth-child(3) {
+.section2 .carte-menu .menu > p {
   color: rgb(166, 114, 69);
+  font-weight: 600;
+  display: grid;
+  height: 100%;
+  align-items: center;
 }
 .section2 .carte-menu .menu-text {
-  text-align: justify;
-  padding-left: 30px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10px;
+  height: 100%;
+}
+.section2 .carte-menu .menu-text h3 {
+  text-transform: uppercase;
+  color: #21201e;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=index.css.map */
