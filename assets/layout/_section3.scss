@@ -1,0 +1,57 @@
+.section3 {
+    margin: 40px auto 60px;
+    height: 500px;
+    display: grid;
+    max-width: 65%;
+    margin: 50px auto;
+    grid-template-columns: 30% 70%;
+    background: black;
+
+    .info-open {
+        border: dashed 1px $white;
+        margin: 20px;
+        padding: 20px;
+
+        h2 {
+            color: $color1;
+            font-family: $font1;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-family: $font2;
+            margin-top: -12px;
+        }
+
+        img {
+            margin: 26px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            color: $color1;
+            font-size: 1.2rem;
+            padding: 20px 0;
+        }
+
+        p {
+            color: $white;
+            font-size: 0.8rem;
+            padding-top: -10px;
+        }
+
+        h5{
+            color: $color1;
+            padding: 30px 0;
+            font-size: 1.2rem;
+        }
+    }
+
+    .form-reservation {
+        background: $white;
+    }
+}
