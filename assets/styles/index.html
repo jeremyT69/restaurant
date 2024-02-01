@@ -98,7 +98,7 @@
                 <img src="../img/dish-item-04.jpg" alt="Rôti de porc">
                 <div class="menu-text">
                     <h3>Roast Pork (4 sticks)</h3>
-                    <p>Pork / Veggies / Shoyu</p>   
+                    <p>Pork / Veggies / Shoyu</p>
                 </div>
                 <p>$18</p>
             </div>
@@ -114,7 +114,7 @@
                 <img src="../img/dish-item-06.jpg" alt="Crabe au curry">
                 <div class="menu-text">
                     <h3>Crab with curry sources</h3>
-                    <p>Crab / Potatoes / Rice</p> 
+                    <p>Crab / Potatoes / Rice</p>
                 </div>
                 <p>$14</p>
             </div>
@@ -130,140 +130,156 @@
                 <img src="../img/dish-item-08.jpg" alt="Pommes de terres au four">
                 <div class="menu-text">
                     <h3>Baked Potato Pizza</h3>
-                    <p>Potato / Bread / Cheese</p> 
+                    <p>Potato / Bread / Cheese</p>
                 </div>
                 <p>$25</p>
             </div>
         </div>
     </div>
 
-    <div class="section3">
-        <div class="info-open">
-            <div>
-                <h2>Time</h2>
-                <h3>Open</h3>
-                <img src="../img/ic-plate.png" alt="image de couverts">
-            </div>
-            <div>
-                <h4>Monday - Friday</h4>
-                <p>7am - 11am (breakfast)</p>
-                <p>11am - 10pm (Lunch/Dinner)</p>
-            </div>
-            <div>
-                <h4>Saturday / Sunday</h4>
-                <p>8am - 1pm (Brunch)</p>
-                <p>1pm - 9pm (Lunch/Dinner)</p>
-            </div>
-            <div>
-                <h5>+ 15 890 979 25 52</h5>
-            </div>
-        </div>
-
-        <div class="form-reservation">
-            <div>
-                <h3>Reservation <br> Online Booking</h3>
-                <img src="../img/ic-plate.png" alt="image de couverts">
-            </div>
-            <form action="#">
-                <label for="People"></label>
-                <input type="number" id="people" value="People" min="1" max="10">
-                <label for="date"></label>
-                <input type="date" id="date" value="2023-11-06" min="2023-11-06" max="2024-11-06">
-                <label for="time"></label>
-                <input type="time" id="time" min="08:00" max="22:00">
-                <label for="name">name</label>
-                <input type="text" id="name">
-                <label for="phone">phone</label>
-                <input type="text" id="phone">
-                <label for="email">email</label>
-                <input type="text" id="email">
-                <div class="submit">
-                    <input type="submit" class="btn" value="Book Now">
+    <section class="section3">
+        <div class="form-content">
+            <div class="hours">
+                <div class="hours-content">
+                    <h2>Time</h2>
+                    <h3>Open</h3>
+                    <img src="../img/ic-plate.png" alt="image de couverts">
+                    <h4>Monday - Friday</h4>
+                    <p>7am - 11am (breakfast)</p>
+                    <p>11am - 10pm (Lunch/Dinner)</p>
+                    <h4>Saturday / Sunday</h4>
+                    <p>8am - 1pm (Brunch)</p>
+                    <p>1pm - 9pm (Lunch/Dinner)</p>
+                    <h5>+ 15 890 979 25 52</h5>
                 </div>
-            </form>
-        </div>
-    </div>
-
-    <div class="section4">
-        <h2>Upcomming <br> Our event</h2>
-        <img src="../img/ic-plate.png" alt="image de couverts">
-
-        <div class="events-left">
-            <div class="event-01">
-                <div class="img">
-                    <img src="../img/event-01.jpg" alt="bottle whisky">
+            </div>
+            <div class="form-infos">
+                <div class="form-infos-container">
+                    <h2>Reservation </h2>
+                    <h3>ONLINE BOOKING</h3>
+                    <img src="../img/ic-plate.png" alt="image de couverts">
+                    <div class="form-input">
+                        <select name="" id="People">
+                            <option value="">People</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                        <input type="date" id="booking-date" name="booking-date" value="2023-11-06" min="2023-11-06"
+                            max="2024-11-06">
+                        <input type="time" id="booking-time" name="booking-time" min="08:00" max="22:00">
+                        <input type="text" placeholder="name">
+                        <input type="text" placeholder="phone">
+                        <input type="email" placeholder="email">
+                    </div>
+                    <button>BOOK NOW</button>
                 </div>
-                <h4>Night Inspirescu Party</h4>
-                <p>Restaurant resto 10:00 pm - 6:00am</p>
-                <button class="tickets">Buy tickets</button>
             </div>
-            <div class="event-02">
-                <div class="img">
-                    <img src="../img/event-02.jpg" alt="image déco">
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="events-container">
+            <h2>Upcomming</h2>
+            <h4>OUR EVENTS</h4>
+            <img src="../img/ic-plate.png" alt="image de couverts">
+            <div class="event-grid">
+                <div class="event-1 event-left">
+                    <div class="date">
+                        <div class="date-content">
+                            <h6>08</h6>
+                            <span>July</span>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <h3>Night Inspirescu Party</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>Restaurant Resto<i class="far fa-clock"></i>10:00 pm -
+                            6:00am</p>
+                        <h5>BUY TICKETS</h5>
+                    </div>
                 </div>
-                <h4>Dj RobagRhume</h4>
-                <p>Restaurant resto 10:00 pm - 6:00am</p>
-                <button class="tickets">Buy tickets</button>
-            </div>
-        </div>
-
-        <div class="events-right">
-            <div class="event-03">
-                <div class="img">
-                    <img src="../img/event-03.jpg" alt="verres de whisky">
+                <div class="event-2 event-left">
+                    <div class="date">
+                        <div class="date-content">
+                            <h6>08</h6>
+                            <span>July</span>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <h3>Dj RobagRhume</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>Restaurant Resto<i class="far fa-clock"></i>10:00 pm
+                            - 6:00am</p>
+                        <h5>BUY TICKETS</h5>
+                    </div>
                 </div>
-                <h4>Thousands celebrities at Johnnie Night</h4>
-                <p>Restaurant resto 10:00 pm - 6:00am</p>
-                <button class="tickets">Buy tickets</button>
+                <div class="event-3">
+                    <div class="address">
+                        <div class="date">
+                            <div class="date-content">
+                                <h6>08</h6>
+                                <span>July</span>
+                            </div>
+                        </div>
+                        <h3>Thousands celebrities at Johnnie Night</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>Restaurant Resto<i class="far fa-clock"></i>10:00 pm
+                            - 6:00am</p>
+                        <h5>BUY TICKETS</h5>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section5">
-        <div class="presentation">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, eaque veniam rem iste in possimus illo
-                assumenda est tempora, dolorum mollitia doloremque ipsa eum. Quam fuga recusandae repudiandae harum
-                numquam.
-                Maiores autem natus, minima laboriosam exercitationem perferendis eos saepe magni asperiores, dolor quas
-                cupiditate optio placeat aliquid. Hic libero recusandae alias nihil, commodi dolorum sapiente maxime!
-                Sunt dicta sapiente obcaecati.</p>
-            <h3>Russel stephens</h3>
-            <p>CEO - Head Passion</p>
-            <div class="img">
-                <img src="../img/avatar-01.jpg" alt="photo du chef cuisinier">
-            </div>
-        </div>
 
-        <div class="maps">
-            <img src="../img/gmap.jpg" alt="plan localisation resto">
+    <section class="section5">
+        <div class="container-presentation">
+            <div class="text-presentation">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, eaque
+                veniam rem iste in
+                possimus
+                illo
+                assumenda est tempora, dolorum mollitia doloremque ipsa eum. Quam fuga
+                recusandae repudiandae
+                harum
+                numquam delectus, id assumenda perspiciatis nulla obcaecati laboriosam
+                temporibus cum velit sed illo?.
+            </div>
+            <h2>Russel Stephens</h2>
+            <p>CEO - HeadPassion</p>
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
-        <img src="../img/bg-footer.jpg" alt="background footer">
-        <div class="footer-left">
-            <h3>Resto</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi molestiae repudiandae unde aliquam
-                delectus, id assumenda perspiciatis nulla obcaecati laboriosam temporibus cum velit sed illo? Sed
-                explicabo perspiciatis quisquam.</p>
-        </div>
-        <div class="footer-right">
-            <div class="newsletter">
-                <h3>Newsletter</h3>
-                <label for="email"></label>
-                <input type="text" id="email" value="Your email address">
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>Resto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi
+                    molestiae repudiandae unde
+                    aliquam
+                    delectus, id assumenda perspiciatis nulla obcaecati laboriosam.</p>
             </div>
-            <div class="social">
-                <h3>Follow us: </h3>
-                <ul>
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                </ul>
+            <div class="footer-right">
+                <div class="newsletter">
+                    <h3>NEWSLETTER</h3>
+                    <input type="email" placeholder="Your email address">
+                </div>
+                <div class="social">
+                    <h3>FOLLOW US :</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 </body>
 

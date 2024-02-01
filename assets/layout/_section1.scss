@@ -3,6 +3,10 @@
     grid-template-columns: 50% 50%;
     background: $white;
 
+    @media screen and (max-width:680px) {
+        grid-template-columns: 1fr;   
+    }
+
     .section1-text {
         margin: 20px;
         padding: 30px 15px;
@@ -43,5 +47,9 @@
 
     .section1-pic {
         background: url(../img/store-01.jpg) center/cover;
+
+        @media screen and (max-width:680px) {
+            background: none;  
+        }
     }
 }

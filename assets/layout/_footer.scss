@@ -1,0 +1,101 @@
+footer {
+    background: url(../img/bg-footer.jpg) center/cover;
+    color: $white;
+    text-align: left;
+    padding: 65px 35px;
+
+    @media screen and (max-width:680px) {
+        background: none;
+    }
+
+    .footer-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        @media screen and (max-width:680px) {
+            grid-template-columns: 1fr;  
+        }
+
+
+        .footer-left {
+            padding-right: 30px;
+
+            @media screen and (max-width:680px) {
+                display: none; 
+            }
+
+            h2 {
+                color: $color1;
+                font-family: $font1;
+                font-size: 2.5rem;
+                font-weight: 100;
+                margin-bottom: 15px;
+            }
+
+            p {
+                line-height: 30px;
+                font-size: 0.9rem;
+                color: $grey;
+            }
+        }
+
+        .footer-right {
+            padding-left: 50px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+
+            @media screen and (max-width:680px) {
+                padding-left: 20px; 
+            }
+
+            h3 {
+                font-size: 0.9rem;
+                font-family: $font3;
+            }
+
+            input {
+                margin-top: 15px;
+                background: none;
+                border: 1px solid $color1;
+                padding: 7px 13px;
+                width: 250px;
+
+                @media screen and (max-width:680px) {
+                    width: 150px;  
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+
+                h3 {
+                    @media screen and (max-width:680px) {
+                        display: none; 
+                    }
+                }
+
+                ul {
+                    @include alignChildren(space-around);
+                    flex-wrap: wrap;
+                    font-size: 0.8rem;
+                    color: $grey;
+                    width: 200px;
+                    cursor: pointer;
+
+                    li {
+                        transition: 0.2s;
+
+                        &:hover {
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
